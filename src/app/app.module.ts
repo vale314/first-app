@@ -11,7 +11,8 @@ import { RecipesItemComponent } from './recipes/recipes-item/recipes-item.compon
 import { RecipeItemComponent } from './recipes/recipes-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import {ShoppingEditComponent} from './shopping-list/shopping-edit/shopping-edit.component';
-import {BackgroundComponent } from './background/background.component'
+import {BackgroundComponent } from './background/background.component';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {BackgroundComponent } from './background/background.component'
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    BackgroundComponent
+    BackgroundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
