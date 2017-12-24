@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  route = 'Home'
+
+  onGetRoute(route:string){
+    console.log(route)
+    this.route = route
+  }
 }

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { SlideMenuModule } from 'cuppa-ng2-slidemenu/cuppa-ng2-slidemenu';
 
 
 import { AppComponent } from './app.component';
@@ -13,6 +14,9 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import {ShoppingEditComponent} from './shopping-list/shopping-edit/shopping-edit.component';
 import {BackgroundComponent } from './background/background.component';
 import { FooterComponent } from './footer/footer.component'
+
+
+
 
 @NgModule({
   declarations: [
@@ -29,7 +33,8 @@ import { FooterComponent } from './footer/footer.component'
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SlideMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

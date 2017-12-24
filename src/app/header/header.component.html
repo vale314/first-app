@@ -1,10 +1,10 @@
 <div class="pos-f-t navbar navbar-expand-lg navbar-light bg-light sticky-top  "> 
-      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <a class="navbar-brand d-none d-sm-none d-md-none d-lg-inline" href="#">
-      <img src="../../assets/home.svg" width="30" height="30" class="d-inline-block align-top  " alt="">
-      <p class="d-none d-sm-none d-md-none d-lg-inline">
+    <cuppa-slidemenu  class="d-sm-inline d-md-inline d-lg-none " animation="arrowturn"  [menulist]="menuItemsArray" (open)="onMenuOpen()" (close)="onMenuClose()" (onItemSelect)="onItemSelect($event)"></cuppa-slidemenu>
+    
+
+    <a class="navbar-brand d-none d-sm-none d-md-none d-lg-inline" href="#" >
+      <img src="../../assets/home.svg" width="30" height="30" class="d-inline-block align-top  " alt="" onclick="onSelect('Home')">
+      <p class="d-none d-sm-none d-md-none d-lg-inline" onclick="onSelect('Home')">
         PlaceBuy
       </p>
     </a>
@@ -24,8 +24,8 @@
 
     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
       <div class="navbar-nav mr-auto">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link active" href="#" (click)="onSelect('Home')">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#" (click)="onSelect('recepi')">Features</a>
           <a class="nav-item nav-link" href="#">Pricing</a>
           <a class="nav-item nav-link disabled" href="#">Disabled</a>
         </div>
